@@ -60,4 +60,29 @@ const titleSizes = {
   h6: '0.75rem',
 };
 
-module.exports = { colors, aligns, fontSizes, titleSizes };
+const lineHeights = {
+  xxlarge: 3,
+  xlarge: 2,
+  large: 1.5,
+  medium: 1.25,
+  small: 1.125,
+  xsmall: 1
+};
+
+const spaceSizes = {
+  xxlarge: '3rem',
+  xlarge: '2rem',
+  large: '1.25rem',
+  medium: '0.95rem',
+  small: '0.625rem',
+  xsmall: '0.3125rem',
+  0: 0
+};
+
+module.exports = {
+  colors, aligns, fontSizes, titleSizes, lineHeights, spaceSizes,
+  capsLetter: '0.2rem',
+  borderWidth: '1px',
+  borderRadius: '0.45rem',
+  borderColor: '@light'
+};

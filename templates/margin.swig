@@ -1,222 +1,38 @@
-.margin-0 {
-  margin: 0;
-}
+{% macro position(sizeKey) %}
+  {% for pos in ['top', 'right', 'bottom', 'left'] %}
+    .margin-{{ pos }}-{{ sizeKey }} {
+    margin-{{ pos }}: {% if sizeKey!=0 %}@space-{% endif %}{{ sizeKey }};
+    }
+  {% endfor %}
+{% endmacro %}
 
-.margin-top-0 {
-  margin-top: 0;
-}
+{% for size in spaceSizes %}
+  .margin-{{ loop.key }} {
+  margin: {% if loop.key!=0 %}@space-{% endif %}{{ loop.key }};
+  }
 
-.margin-right-0 {
-  margin-right: 0;
-}
+  {{ position(loop.key) }}
 
-.margin-bottom-0 {
-  margin-bottom: 0;
-}
+  .margin-v-{{ loop.key }} {
+  margin-top: {% if loop.key!=0 %}@space-{% endif %}{{ loop.key }};
+  margin-bottom: {% if loop.key!=0 %}@space-{% endif %}{{ loop.key }};
+  }
 
-.margin-left-0 {
-  margin-left: 0;
-}
-
-.margin-h-0 {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.margin-v-0 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.margin-xsmall {
-  margin: @space-xsmall;
-}
-
-.margin-top-xsmall {
-  margin-top: @space-xsmall;
-}
-
-.margin-right-xsmall {
-  margin-right: @space-xsmall;
-}
-
-.margin-bottom-xsmall {
-  margin-bottom: @space-xsmall;
-}
-
-.margin-left-xsmall {
-  margin-left: @space-xsmall;
-}
-
-.margin-h-xsmall {
-  margin-left: @space-xsmall;
-  margin-right: @space-xsmall;
-}
-
-.margin-v-xsmall {
-  margin-top: @space-xsmall;
-  margin-bottom: @space-xsmall;
-}
-
-.margin-small {
-  margin: @space-small;
-}
-
-.margin-top-small {
-  margin-top: @space-small;
-}
-
-.margin-right-small {
-  margin-right: @space-small;
-}
-
-.margin-bottom-small {
-  margin-bottom: @space-small;
-}
-
-.margin-left-small {
-  margin-left: @space-small;
-}
-
-.margin-h-small {
-  margin-left: @space-small;
-  margin-right: @space-small;
-}
-
-.margin-v-small {
-  margin-top: @space-small;
-  margin-bottom: @space-small;
-}
-
-.margin-medium {
-  margin: @space-medium;
-}
-
-.margin-top-medium {
-  margin-top: @space-medium;
-}
-
-.margin-right-medium {
-  margin-right: @space-medium;
-}
-
-.margin-bottom-medium {
-  margin-bottom: @space-medium;
-}
-
-.margin-left-medium {
-  margin-left: @space-medium;
-}
-
-.margin-h-medium {
-  margin-left: @space-medium;
-  margin-right: @space-medium;
-}
-
-.margin-v-medium {
-  margin-top: @space-medium;
-  margin-bottom: @space-medium;
-}
-
-.margin-large {
-  margin: @space-large;
-}
-
-.margin-top-large {
-  margin-top: @space-large;
-}
-
-.margin-right-large {
-  margin-right: @space-large;
-}
-
-.margin-bottom-large {
-  margin-bottom: @space-large;
-}
-
-.margin-left-large {
-  margin-left: @space-large;
-}
-
-.margin-h-large {
-  margin-left: @space-large;
-  margin-right: @space-large;
-}
-
-.margin-v-large {
-  margin-top: @space-large;
-  margin-bottom: @space-large;
-}
-
-.margin-xlarge {
-  margin: @space-xlarge;
-}
-
-.margin-top-xlarge {
-  margin-top: @space-xlarge;
-}
-
-.margin-right-xlarge {
-  margin-right: @space-xlarge;
-}
-
-.margin-bottom-xlarge {
-  margin-bottom: @space-xlarge;
-}
-
-.margin-left-xlarge {
-  margin-left: @space-xlarge;
-}
-
-.margin-h-xlarge {
-  margin-left: @space-xlarge;
-  margin-right: @space-xlarge;
-}
-
-.margin-v-xlarge {
-  margin-top: @space-xlarge;
-  margin-bottom: @space-xlarge;
-}
-
-.margin-xxlarge {
-  margin: @space-xxlarge;
-}
-
-.margin-top-xxlarge {
-  margin-top: @space-xxlarge;
-}
-
-.margin-right-xxlarge {
-  margin-right: @space-xxlarge;
-}
-
-.margin-bottom-xxlarge {
-  margin-bottom: @space-xxlarge;
-}
-
-.margin-left-xxlarge {
-  margin-left: @space-xxlarge;
-}
-
-.margin-h-xxlarge {
-  margin-left: @space-xxlarge;
-  margin-right: @space-xxlarge;
-}
-
-.margin-v-xxlarge {
-  margin-top: @space-xxlarge;
-  margin-bottom: @space-xxlarge;
-}
+  .margin-h-{{ loop.key }} {
+  margin-left: {% if loop.key!=0 %}@space-{% endif %}{{ loop.key }};
+  margin-right: {% if loop.key!=0 %}@space-{% endif %}{{ loop.key }};
+  }
+{% endfor %}
 
 .margin-left-auto {
-  margin-left: auto
+margin-left: auto
 }
 
 .margin-right-auto {
-  margin-right: auto
+margin-right: auto
 }
 
 .margin-h-auto {
-  margin-left: auto;
-  margin-right: auto;
+margin-left: auto;
+margin-right: auto;
 }

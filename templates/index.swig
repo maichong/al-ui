@@ -1,7 +1,6 @@
 // 基础样式
 @import 'vars';
 @import "color";
-@import "type-scale";
 @import "typography";
 @import "layout";
 @import "align";

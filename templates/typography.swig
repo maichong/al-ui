@@ -1,126 +1,115 @@
 page {
-  color: @text-color;
-  background-color: @page-bg;
-  font-size: @font-size-medium;
+color: @text-color;
+background-color: @page-bg;
+font-size: @font-size-medium;
 }
 
 .font-family-inherit {
-  font-family: inherit;
+font-family: inherit;
 }
 
 .font-size-inherit {
-  font-size: inherit;
+font-size: inherit;
 }
 
 .text-decoration-none {
-  text-decoration: none;
+text-decoration: none;
 }
 
 .bold {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .regular {
-  font-weight: normal;
+font-weight: normal;
 }
 
 .italic {
-  font-style: italic;
+font-style: italic;
 }
 
 .caps {
-  text-transform: uppercase;
-  letter-spacing: @caps-letter-spacing;
+text-transform: uppercase;
+letter-spacing: @caps-letter-spacing;
 }
 
 .left-align {
-  text-align: left;
+text-align: left;
 }
 
 .center {
-  text-align: center;
+text-align: center;
 }
 
 .right-align {
-  text-align: right;
+text-align: right;
 }
 
 .justify {
-  text-align: justify;
+text-align: justify;
 }
 
 .nowrap {
-  white-space: nowrap;
+white-space: nowrap;
 }
 
 .break-word {
-  word-wrap: break-word;
+word-wrap: break-word;
 }
 
-.font-size-xsmall {
-  font-size: @font-size-xsmall;
+.h1 {
+font-size: @font-size-h1;
 }
 
-.font-size-small {
-  font-size: @font-size-small;
+.h2 {
+font-size: @font-size-h2;
 }
 
-.font-size-medium {
-  font-size: @font-size-medium;
+.h3 {
+font-size: @font-size-h3;
 }
 
-.font-size-large {
-  font-size: @font-size-large;
+.h4 {
+font-size: @font-size-h4;
 }
 
-.font-size-xlarge {
-  font-size: @font-size-xlarge;
+.h5 {
+font-size: @font-size-h5;
 }
 
-.font-size-xxlarge {
-  font-size: @font-size-xxlarge;
+.h6 {
+font-size: @font-size-h6;
 }
 
-.line-height-xsmall {
-  line-height: @line-height-xsmall;
-}
+{% for size in fontSizes %}
+  .font-size-{{ loop.key }} {
+  font-size: @font-size-{{ loop.key }};
+  }
+{% endfor %}
 
-.line-height-small {
-  line-height: @line-height-small;
-}
+{% for height in lineHeights %}
+  .line-height-{{ loop.key }} {
+  line-height: @line-height-{{ loop.key }};
+  }
+{% endfor %}
 
-.line-height-medium {
-  line-height: @line-height-medium;
-}
-
-.line-height-large {
-  line-height: @line-height-large;
-}
-
-.line-height-xlarge {
-  line-height: @line-height-xlarge;
-}
-
-.line-height-xxlarge {
-  line-height: @line-height-xxlarge;
-}
 
 .list-style-none {
-  list-style: none;
+list-style: none;
 }
 
 .underline {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 .truncate {
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+max-width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
 }
 
 .list-reset {
-  list-style: none;
-  padding-left: 0;
+list-style: none;
+padding-left: 0;
 }

@@ -1,130 +1,137 @@
-
 .flex {
-  display: flex;
+display: flex;
 }
 
 .flex-column {
-  flex-direction: column;
+flex-direction: column;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+flex-wrap: wrap;
 }
 
 .items-start {
-  align-items: flex-start;
+align-items: flex-start;
 }
 
 .items-end {
-  align-items: flex-end;
+align-items: flex-end;
 }
 
 .items-center {
-  align-items: center;
+align-items: center;
 }
 
 .items-baseline {
-  align-items: baseline;
+align-items: baseline;
 }
 
 .items-stretch {
-  align-items: stretch;
+align-items: stretch;
 }
 
 .self-start {
-  align-self: flex-start;
+align-self: flex-start;
 }
 
 .self-end {
-  align-self: flex-end;
+align-self: flex-end;
 }
 
 .self-center {
-  align-self: center;
+align-self: center;
 }
 
 .self-baseline {
-  align-self: baseline;
+align-self: baseline;
 }
 
 .self-stretch {
-  align-self: stretch;
+align-self: stretch;
 }
 
 .justify-start {
-  justify-content: flex-start;
+justify-content: flex-start;
 }
 
 .justify-end {
-  justify-content: flex-end;
+justify-content: flex-end;
 }
 
 .justify-center {
-  justify-content: center;
+justify-content: center;
 }
 
 .justify-between {
-  justify-content: space-between;
+justify-content: space-between;
 }
 
 .justify-around {
-  justify-content: space-around;
+justify-content: space-around;
 }
 
 .content-start {
-  align-content: flex-start;
+align-content: flex-start;
 }
 
 .content-end {
-  align-content: flex-end;
+align-content: flex-end;
 }
 
 .content-center {
-  align-content: center;
+align-content: center;
 }
 
 .content-between {
-  align-content: space-between;
+align-content: space-between;
 }
 
 .content-around {
-  align-content: space-around;
+align-content: space-around;
 }
 
 .content-stretch {
-  align-content: stretch;
+align-content: stretch;
 }
 
 .flex-auto {
-  flex: 1 1 auto;
-  min-width: 0;
-  min-height: 0;
+flex: 1 1 auto;
+min-width: 0;
+min-height: 0;
 }
 
 .flex-none {
-  flex: none;
+flex: none;
 }
 
 .order-0 {
-  order: 0;
+order: 0;
 }
 
 .order-1 {
-  order: 1;
+order: 1;
 }
 
 .order-2 {
-  order: 2;
+order: 2;
 }
 
 .order-3 {
-  order: 3;
+order: 3;
 }
 
 .order-4 {
-  order: 4;
+order: 4;
+}
+
+.order-5 {
+order: 5;
+}
+
+.order-6 {
+order: 6;
 }
 
 .order-last {
-  order: 99999;
+order: 99999;
 }
