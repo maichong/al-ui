@@ -1,0 +1,27 @@
+{
+  "name": "al-ui",
+  "version": "0.1.0",
+  "description": "UI for labrador component",
+  "main": "index.less",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/al-ui.git"
+  },
+  "author": {
+    "email": "liang@maichong.it",
+    "name": "liang",
+    "url": "https://github.com/liangxingchen"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maichong/al-ui/issues"
+  },
+  "homepage": "https://github.com/maichong/al-ui#readme",
+  "devDependencies": {
+    "cssbeautify": "^0.3.1",
+    "swig": "^1.4.2"
+  }
+}
