@@ -1,3 +1,4 @@
+// 基础样式
 @import 'vars';
 @import "color";
 @import "type-scale";
@@ -10,3 +11,17 @@
 @import "flexbox";
 @import "position";
 @import "border";
+
+// 组件样式
+@import "button";
+@import "form";
+@import "list";
+@import "footer";
+@import "toolbar";
+@import "icon";
+@import "panel";
+@import "table";
+@import "progress";
+@import "action-sheet";
+@import "dialog";
+@import "msg";
