@@ -24,6 +24,36 @@
   }
 {% endfor %}
 
+.margin {
+margin: @space-medium;
+}
+
+.margin-top {
+margin-top: @space-medium;
+}
+
+.margin-right {
+margin-right: @space-medium;
+}
+
+.margin-bottom {
+margin-bottom: @space-medium;
+}
+
+.margin-left {
+margin-left: @space-medium;
+}
+
+.margin-v {
+margin-top: @space-medium;
+margin-bottom: @space-medium;
+}
+
+.margin-h {
+margin-left: @space-medium;
+margin-right: @space-medium;
+}
+
 .margin-left-auto {
 margin-left: auto
 }

@@ -24,6 +24,36 @@
   }
 {% endfor %}
 
+.padding {
+padding: @space-medium;
+}
+
+.padding-top {
+padding-top: @space-medium;
+}
+
+.padding-right {
+padding-right: @space-medium;
+}
+
+.padding-bottom {
+padding-bottom: @space-medium;
+}
+
+.padding-left {
+padding-left: @space-medium;
+}
+
+.padding-v {
+padding-top: @space-medium;
+padding-bottom: @space-medium;
+}
+
+.padding-h {
+padding-left: @space-medium;
+padding-right: @space-medium;
+}
+
 .padding-left-auto {
 padding-left: auto
 }

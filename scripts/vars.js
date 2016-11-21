@@ -9,12 +9,12 @@
 const aligns = ['baseline', 'top', 'middle', 'bottom'];
 
 const colors = {
-  primary: '#4b8cf7',
-  secondary: '#5bc0de',
-  success: '#35aa47',
-  waring: '#fbb046',
-  danger: '#d84a38',
-  info: '#5bc0de',
+  primary: '#10aeff',
+  secondary: '#56b2e1',
+  success: '#09bb07',
+  waring: '#ffbe00',
+  danger: '#f76260',
+  info: '#56b2e1',
   inverse: '#515151',
 
   aqua: '#7fdbff',
@@ -37,17 +37,18 @@ const colors = {
   gray: '#999999',
   black: '#111111',
 
-  'page-bg': '#efeff4',
-  'text-color': '#333',
-  'link-color': '#586c94',
+  page: '#efeff4',
+  text: '#333',
+  link: '#586c94',
+  border: '@color-light'
 };
 
 const fontSizes = {
-  xxlarge: '1.4rem',
-  xlarge: '0.95rem',
-  large: '0.85rem',
-  medium: '0.75rem',
-  small: '0.55rem',
+  xxlarge: '1.5rem',
+  xlarge: '1.25rem',
+  large: '0.95rem',
+  medium: '0.85rem',
+  small: '0.65rem',
   xsmall: '0.45rem'
 };
 
@@ -70,19 +71,18 @@ const lineHeights = {
 };
 
 const spaceSizes = {
-  xxlarge: '3rem',
-  xlarge: '2rem',
+  xxlarge: '2.5rem',
+  xlarge: '1.75rem',
   large: '1.25rem',
-  medium: '0.95rem',
-  small: '0.625rem',
-  xsmall: '0.3125rem',
+  medium: '0.85rem',
+  small: '0.55rem',
+  xsmall: '0.35rem',
   0: 0
 };
 
 module.exports = {
   colors, aligns, fontSizes, titleSizes, lineHeights, spaceSizes,
   capsLetter: '0.2rem',
-  borderWidth: '1px',
-  borderRadius: '0.45rem',
-  borderColor: '@light'
+  borderWidth: '1rpx',
+  borderRadius: '0.45rem'
 };

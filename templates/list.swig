@@ -1,0 +1,24 @@
+.list{
+.border-bottom;
+padding:0;
+margin:0;
+list-style:none;
+background:#fff;
+}
+
+.list-header{
+padding:@space-xsmall @space-medium;
+background-color:@color-light;
+}
+
+.list-item{
+.border-top;
+.padding;
+font-size:@font-size-medium;
+}
+
+.group-header{
+.padding;
+color:@color-gray;
+font-size:@font-size-medium;
+}

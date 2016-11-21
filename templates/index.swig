@@ -1,15 +1,5 @@
 // 基础样式
 @import 'vars';
-@import "color";
-@import "typography";
-@import "layout";
-@import "align";
-@import "margin";
-@import "padding";
-@import "grid";
-@import "flexbox";
-@import "position";
-@import "border";
 
 // 组件样式
 @import "button";
@@ -24,3 +14,14 @@
 @import "action-sheet";
 @import "dialog";
 @import "msg";
+
+@import "color";
+@import "typography";
+@import "align";
+@import "margin";
+@import "padding";
+@import "grid";
+@import "flexbox";
+@import "position";
+@import "border";
+@import "layout";
