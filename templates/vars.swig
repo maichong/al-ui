@@ -30,3 +30,8 @@
 
 // 工具栏
 @toolbar-height: 96rpx;
+
+// 按钮
+@buttonRadius: {{ buttonRadius }};
+@buttonSmallRadius: {{ buttonSmallRadius }};
+@buttonLargeRadius: {{ buttonLargeRadius }};

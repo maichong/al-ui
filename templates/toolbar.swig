@@ -17,3 +17,11 @@ bottom:0;
 .has-toolbar{
 margin-bottom:@toolbar-height;
 }
+
+
+{% for color in colors %}
+  .toolbar-{{ loop.key }} {
+  background-color: @color-{{ loop.key }};
+  color:#fff;
+  }
+{% endfor %}

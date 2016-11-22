@@ -12,10 +12,10 @@ const colors = {
   primary: '#10aeff',
   secondary: '#56b2e1',
   success: '#09bb07',
-  waring: '#ffbe00',
+  warning: '#ffbe00',
   danger: '#f76260',
   info: '#56b2e1',
-  inverse: '#515151',
+  dark: '#515151',
 
   aqua: '#7fdbff',
   blue: '#0074d9',
@@ -84,5 +84,8 @@ module.exports = {
   colors, aligns, fontSizes, titleSizes, lineHeights, spaceSizes,
   capsLetter: '0.2rem',
   borderWidth: '1rpx',
-  borderRadius: '0.45rem'
+  borderRadius: '0.45rem',
+  buttonRadius: '0.3rem',
+  buttonSmallRadius: '0.2rem',
+  buttonLargeRadius: '0.45rem',
 };

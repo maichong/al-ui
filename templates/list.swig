@@ -16,9 +16,3 @@ background-color:@color-light;
 .padding;
 font-size:@font-size-medium;
 }
-
-.group-header{
-.padding;
-color:@color-gray;
-font-size:@font-size-medium;
-}

@@ -113,3 +113,23 @@ white-space: nowrap;
 list-style: none;
 padding-left: 0;
 }
+
+.group-header{
+.padding;
+color:@color-gray;
+font-size:@font-size-medium;
+}
+
+.tips{
+color:@color-gray;
+font-size:@font-size-small;
+.padding-h-small;
+.margin-v-xsmall;
+}
+
+.code{
+background:@color-light;
+color:@color-text;
+border-radius:0.2rem;
+padding:@space-xsmall/2 @space-xsmall;
+}
